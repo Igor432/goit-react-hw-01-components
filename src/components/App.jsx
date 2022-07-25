@@ -1,3 +1,7 @@
+
+import Profile from "./user/profile";
+import user from '../components/user/user'
+
 export const App = () => {
   return (
     <div
@@ -9,8 +13,17 @@ export const App = () => {
         fontSize: 40,
         color: '#010101'
       }}
+     
     >
+       <Profile
+  username={user.username}
+  tag={user.tag}
+  location={user.location}
+  avatar={user.avatar}
+  stats={user.stats}
+/>
       React homework template
+ 
     </div>
   );
 };
