@@ -1,4 +1,4 @@
-import React from "react";
+import '../user/profile.css';
 
 
 function Profile (props) {
