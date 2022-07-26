@@ -1,4 +1,4 @@
-import '../user/profile.css';
+import profile from '../user/profile.css';
 
 
 function Profile (props) {
@@ -18,15 +18,15 @@ function Profile (props) {
 
   <ul class="stats">
     <li>
-      <span class="label">Followers</span>
+      <span className={profile.label}>Followers</span>
       <span class="quantity">{props.stats.followers}</span>
     </li>
     <li>
-      <span class="label">Views</span>
+      <span className={profile.label}>Views</span>
       <span class="quantity">{props.stats.views}</span>
     </li>
     <li>
-      <span class="label">Likes</span>
+      <span className={profile.label}>Likes</span>
       <span class="quantity">{props.stats.likes}</span>
     </li>
   </ul>
