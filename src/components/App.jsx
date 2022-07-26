@@ -3,6 +3,7 @@ import Profile from "./user/profile";
 import user from '../components/user/user'
 import data from './stats/data.json';
 import Statistics from './stats/statistics'
+import FriendList from "./friends/friendList";
 
 export const App = () => {
   return (
@@ -13,7 +14,9 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
+        flexGrow: 3,
+        flexWrap: 'wrap',
       }}
      
     >
@@ -25,8 +28,12 @@ export const App = () => {
   stats={user.stats}
 />
 
-
 <Statistics stats={data} />
+
+<div>
+<FriendList/>
+</div>
+
     </div>
   );
 };
