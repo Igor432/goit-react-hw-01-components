@@ -5,7 +5,8 @@ import data from './stats/data.json';
 import Statistics from './stats/statistics'
 import FriendList from "./friends/friendList";
 import friends from './friends/friends.json'
-
+import transactions from './transactions/transactions'
+import TransactionHistory from './transactions/TransactionHistory'
 
 
 export const App = () => {
@@ -35,7 +36,7 @@ export const App = () => {
 
 
 <FriendList friends={friends}/>
-
+<TransactionHistory items={transactions}/>
 
     </div>
   );

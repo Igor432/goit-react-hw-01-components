@@ -1,0 +1,23 @@
+thead {
+    background-color: rgb(159, 159, 189);
+  
+}
+
+tr:nth-of-type(2n) {
+    background: rgba(119, 136, 153, 0.076);
+  }
+
+
+.transaction-history {
+width: 1000px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(9, 8, 8, 0.63);
+
+
+}
+
+.item-row {
+    text-align: center;
+    padding-top: 30px;
+    border: 1px solid rgb(159, 159, 189);;
+}

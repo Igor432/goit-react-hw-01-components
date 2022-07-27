@@ -13,9 +13,6 @@
    padding-left: 40px;
 }
    
-.avatar {
-  
-}
 
 .name {
     padding-left: 20px;
@@ -28,3 +25,7 @@
   
 }
 
+.avatar {
+    margin: 0px;
+    margin-left: 15px;
+}

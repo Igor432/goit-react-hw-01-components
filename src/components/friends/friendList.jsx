@@ -12,6 +12,7 @@ function FriendList ({friends}) {
 {friends.map(friend => (  
 
 <FriendListItem
+id = {friend.id}
 name = {friend.name}
 avatar = {friend.avatar}
 isOnline = {friend.isOnline}
