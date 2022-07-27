@@ -1,9 +1,8 @@
 import FriendListItem from "./friendListItem";
 import '../friends/friends.css'
+var PropTypes = require('prop-types'); // ES5 with npm
 
-
-
-function FriendList ({friends}) {
+const FriendList = ({friends}) => {
 
 
  return (
@@ -22,5 +21,13 @@ isOnline = {friend.isOnline}
 </ul>
  )
 }
+
+
+FriendListItem.propTypes = {
+    id: PropTypes.string,
+    label: PropTypes.string,
+    percentage: PropTypes.number,
+   title: PropTypes.string
+    }
 
 export default FriendList;

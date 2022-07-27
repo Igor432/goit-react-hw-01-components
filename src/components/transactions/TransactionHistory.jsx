@@ -1,11 +1,12 @@
 import '../transactions/transactions.css'
+var PropTypes = require('prop-types');
 
-function TransactionHistory ({items}) {
+const TransactionHistory = ({items}) => {
 
     return (
 
 <table class="transaction-history">
-  <thead>
+  <thead class='tr-head'>
     <tr>
       <th>Type</th>
       <th>Amount</th>
@@ -15,8 +16,8 @@ function TransactionHistory ({items}) {
   <tbody>
 {items.map(item => (
  
-  <tr key={item.id}>
-    <td class='item-row'>{item.type}</td>
+  <tr key={item.id} class='tr-item'>
+    <td class='item-row '>{item.type}</td>
     <td class='item-row'>{item.amount}</td>
     <td class='item-row'>{item.currency}</td>
   </tr>
@@ -31,5 +32,13 @@ function TransactionHistory ({items}) {
     )
 
 }
+
+TransactionHistory.propTypes = {
+type: PropTypes.string,
+amount: PropTypes.number,
+currency: PropTypes.string
+}
+
+
 
 export default TransactionHistory
