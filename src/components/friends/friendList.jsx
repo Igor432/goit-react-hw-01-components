@@ -3,18 +3,23 @@ import '../friends/friends.css'
 
 
 
-function FriendList (friends) {
+function FriendList ({friends}) {
 
-    return (
-   
+
+ return (
 <ul class="friend-list">
- <FriendListItem>
-</FriendListItem>
+
+{friends.map(friend => (  
+
+<FriendListItem
+name = {friend.name}
+avatar = {friend.avatar}
+isOnline = {friend.isOnline}
+
+/>
+))}
 </ul>
-    
-    )
-
+ )
 }
-
 
 export default FriendList;

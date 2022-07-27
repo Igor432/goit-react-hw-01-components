@@ -13,25 +13,18 @@
    padding-left: 40px;
 }
    
-.friend-img {
-    width: 80px;
-    height: 80px;
+.avatar {
+  
 }
 
-.friend-name {
+.name {
     padding-left: 20px;
 }
 
-.friendOnline {
+.status {
     width: 30px;
     height: 30px;
     border-radius: 50%;
   
 }
 
-.friendOffline {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
- 
-}

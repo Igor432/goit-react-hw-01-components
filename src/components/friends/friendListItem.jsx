@@ -1,27 +1,23 @@
 
-import friends from '../friends/friends'
 import '../friends/friends.css'
 
 
 
 
-const FriendListItem = ({ avatar, name}) => {
-
-
+function FriendListItem ({id, avatar, name, isOnline}) {
 
 return (
 
-    friends.map(friend => (
-<li class='friend-item' key={friend.id} >
-    <span class='friendOnline' isonline={friend.isOnline.toString()} style={{
-        backgroundColor: friend.isOnline ? 'green' : 'red'
+   
+<li class='friend-item' key={id} >
+    <span class='status' isonline={isOnline} style={{
+        backgroundColor: isOnline ? 'green' : 'red'
     }}></span>
-<img src={avatar} class='friend-img' alt="" />
-<p class='friend-name'>{name}</p>
+  <img class="avatar" src={avatar} alt="User avatar" width="48px" />
+<p class="name">{name}</p>
 
 </li>
 
-    ))
 )
 }
 

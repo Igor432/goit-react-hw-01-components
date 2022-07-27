@@ -4,6 +4,7 @@ import user from '../components/user/user'
 import data from './stats/data.json';
 import Statistics from './stats/statistics'
 import FriendList from "./friends/friendList";
+import friends from './friends/friends.json'
 
 
 
@@ -33,7 +34,7 @@ export const App = () => {
 <Statistics stats={data} />
 
 
-<FriendList/>
+<FriendList friends={friends}/>
 
 
     </div>
