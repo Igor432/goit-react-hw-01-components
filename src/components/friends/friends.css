@@ -21,3 +21,17 @@
 .friend-name {
     padding-left: 20px;
 }
+
+.friendOnline {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  
+}
+
+.friendOffline {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+ 
+}

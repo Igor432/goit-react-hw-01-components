@@ -5,6 +5,8 @@ import data from './stats/data.json';
 import Statistics from './stats/statistics'
 import FriendList from "./friends/friendList";
 
+
+
 export const App = () => {
   return (
     <div
@@ -30,9 +32,9 @@ export const App = () => {
 
 <Statistics stats={data} />
 
-<div>
+
 <FriendList/>
-</div>
+
 
     </div>
   );
