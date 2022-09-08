@@ -1,5 +1,4 @@
-import React from 'react';
-import style from '../stats/stats.module.css';
+import style from './stats.module.css';
 import PropTypes from 'prop-types';
 
 const Statistics = ({ title = 'Upload Stats', stats }) => {
