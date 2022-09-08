@@ -1,33 +1,27 @@
-import FriendListItem from "./friendListItem";
-import '../friends/friends.css'
-var PropTypes = require('prop-types'); // ES5 with npm
+import FriendListItem from './FriendListItem.jsx';
+import style from '../friends/friends.module.css';
+import PropTypes from 'prop-types';
 
-const FriendList = ({friends}) => {
-
-
- return (
-<ul class="friend-list">
-
-{friends.map(friend => (  
-
-<FriendListItem
-key = {friend.id}
-name = {friend.name}
-avatar = {friend.avatar}
-isOnline = {friend.isOnline}
-
-/>
-))}
-</ul>
- )
-}
-
+const FriendList = ({ friends }) => {
+  return (
+    <ul className={style.friend_list}>
+      {friends.map(friend => (
+        <FriendListItem
+          key={friend.id}
+          name={friend.name}
+          avatar={friend.avatar}
+          isOnline={friend.isOnline}
+        />
+      ))}
+    </ul>
+  );
+};
 
 FriendListItem.propTypes = {
-    id: PropTypes.string,
-    label: PropTypes.string,
-    percentage: PropTypes.number,
-   title: PropTypes.string
-    }
+  id: PropTypes.string,
+  label: PropTypes.string,
+  percentage: PropTypes.number,
+  title: PropTypes.string,
+};
 
 export default FriendList;
