@@ -1,16 +1,19 @@
 import style from './stats.module.css';
 import PropTypes from 'prop-types';
 
+const randColor = () => {
+  return (
+    '#' +
+    Math.floor(Math.random() * 16777215)
+      .toString(16)
+      .padStart(6, '0')
+      .toUpperCase()
+  );
+};
+
 const Statistics = ({ title = 'Upload Stats', stats }) => {
-  const randColor = () => {
-    return (
-      '#' +
-      Math.floor(Math.random() * 16777215)
-        .toString(16)
-        .padStart(6, '0')
-        .toUpperCase()
-    );
-  };
+
+
 
   return (
     <section className={style.statistics}>
@@ -34,10 +37,8 @@ const Statistics = ({ title = 'Upload Stats', stats }) => {
 };
 
 Statistics.propTypes = {
-  title: PropTypes.object,
-  id: PropTypes.object,
-  label: PropTypes.object,
-  percentage: PropTypes.object,
+  title: PropTypes.string,
+stats: PropTypes.object,
 };
 
 export default Statistics;

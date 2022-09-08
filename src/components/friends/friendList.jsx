@@ -18,10 +18,7 @@ const FriendList = ({ friends }) => {
 };
 
 FriendListItem.propTypes = {
-  id: PropTypes.string,
-  label: PropTypes.string,
-  percentage: PropTypes.number,
-  title: PropTypes.string,
+friends: PropTypes.object
 };
 
 export default FriendList;

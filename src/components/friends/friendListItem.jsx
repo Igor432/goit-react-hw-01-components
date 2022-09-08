@@ -5,19 +5,15 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <li className={style.friend_item}>
       <span
-        className={style.status}
+        className={ isOnline ? style.status : style.status_red}
         isOnline={isOnline}
-        style={{
-          backgroundColor: isOnline ? 'green' : 'red',
-        }}
       ></span>
       <img
         className={style.avatar}
         src={avatar}
         alt="User avatar"
         style={{
-          width: '40px',
-          height: 'auto',
+        
         }}
       />
       <p className={style.name}>{name}</p>
