@@ -14,7 +14,6 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
         className={style.avatar}
         src={avatar}
         alt="User avatar"
-      
       />
       <p className={style.name}>{name}</p>
     </li>
