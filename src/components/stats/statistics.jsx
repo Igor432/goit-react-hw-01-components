@@ -40,11 +40,12 @@ Statistics.propTypes = {
 
   title: PropTypes.string,
 
-  stats: PropTypes.shape({
+  stats: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string.isRequired,
     percentage: PropTypes.number.isRequired,
     id: PropTypes.string.isRequired
-  }).isRequired,   
+  }))
+
 
 
 
