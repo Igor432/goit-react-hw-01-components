@@ -1,4 +1,4 @@
-import style from './user/profile.module.css';
+import style from './user/Profile.module.css';
 import Profile from './user/Profile.jsx';
 import user from '../components/user/user';
 import data from './stats/data.json';

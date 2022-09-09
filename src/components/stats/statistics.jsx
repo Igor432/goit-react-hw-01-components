@@ -1,4 +1,4 @@
-import style from './stats.module.css';
+import style from './Stats.module.css';
 import PropTypes from 'prop-types';
 
 const randColor = () => {
