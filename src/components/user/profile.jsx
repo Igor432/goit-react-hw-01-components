@@ -39,6 +39,9 @@ Profile.propTypes = {
   location: PropTypes.string,
   label: PropTypes.string,
   stats: PropTypes.object,
+  likes: PropTypes.number,
+  views: PropTypes.number,
+  followers: PropTypes.number
 
 };
 

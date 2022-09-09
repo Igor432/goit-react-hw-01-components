@@ -1,4 +1,5 @@
 
+import style from './user/profile.module.css';
 import Profile from './user/Profile.jsx';
 import user from '../components/user/user';
 import data from './stats/data.json';
@@ -7,11 +8,11 @@ import FriendList from './friends/FriendList.jsx';
 import friends from './friends/friends.json';
 import transactions from './transactions/transactions';
 import TransactionHistory from './transactions/TransactionHistory.jsx';
-import '../index.css';
+
 
 export const App = () => {
   return (
-    <div class="main_div">
+    <div className={style.main}>
       <Profile
         username={user.username}
         tag={user.tag}

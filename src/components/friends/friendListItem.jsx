@@ -2,19 +2,19 @@ import style from './friends.module.css';
 import PropTypes from 'prop-types';
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
+
+
   return (
     <li className={style.friend_item}>
       <span
         className={ isOnline ? style.status : style.status_red}
-        isOnline={isOnline}
+        isOnline
       ></span>
       <img
         className={style.avatar}
         src={avatar}
         alt="User avatar"
-        style={{
-        
-        }}
+      
       />
       <p className={style.name}>{name}</p>
     </li>

@@ -25,7 +25,11 @@ const TransactionHistory = ({ items }) => {
 };
 
 TransactionHistory.propTypes = {
-items: PropTypes.object
+items: PropTypes.object,
+id: PropTypes.string,
+type: PropTypes.string,
+amount: PropTypes.number,
+currency: PropTypes.string
 };
 
 export default TransactionHistory;

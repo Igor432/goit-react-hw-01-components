@@ -18,7 +18,11 @@ const FriendList = ({ friends }) => {
 };
 
 FriendListItem.propTypes = {
-friends: PropTypes.object
+friends: PropTypes.object,
+id: PropTypes.string,
+name: PropTypes.string,
+avatar: PropTypes.string,
+isOnline: PropTypes.bool
 };
 
 export default FriendList;
