@@ -3,6 +3,8 @@ import style from './friends.module.css';
 import PropTypes from 'prop-types';
 
 const FriendList = ({ friends }) => {
+
+
   return (
     <ul className={style.friend_list}>
       {friends.map(friend => (
@@ -18,11 +20,18 @@ const FriendList = ({ friends }) => {
 };
 
 FriendListItem.propTypes = {
-friends: PropTypes.object,
-id: PropTypes.string,
-name: PropTypes.string,
-avatar: PropTypes.string,
-isOnline: PropTypes.bool
+
+  friends: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+  }).isRequired 
+
+
+
+
+
 };
 
 export default FriendList;

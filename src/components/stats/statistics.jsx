@@ -37,11 +37,21 @@ const Statistics = ({ title = 'Upload Stats', stats }) => {
 };
 
 Statistics.propTypes = {
-title: PropTypes.string,
-stats: PropTypes.object,
-id: PropTypes.string,
-label: PropTypes.string,
-percentage: PropTypes.string,
+
+  title: PropTypes.string,
+
+  stats: PropTypes.shape({
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired
+  }).isRequired,   
+
+
+
+
+
+
+
 };
 
 export default Statistics;
