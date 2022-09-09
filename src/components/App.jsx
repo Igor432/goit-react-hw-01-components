@@ -1,4 +1,3 @@
-
 import style from './user/profile.module.css';
 import Profile from './user/Profile';
 import user from '../components/user/user';
@@ -8,7 +7,6 @@ import FriendList from './friends/FriendList';
 import friends from './friends/friends.json';
 import transactions from './transactions/transactions';
 import TransactionHistory from './transactions/TransactionHistory';
-
 
 export const App = () => {
   return (
